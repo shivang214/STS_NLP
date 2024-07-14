@@ -18,10 +18,10 @@ meanings.
 ## Architecture
 
 1. ### Manhatten LSTM (MaLSTM):
-        The MaLSTM architecture consists of two LSTMs which shares the same weights and it embeds the sentences. Once we have the sentence embeddings, we can apply cosine similarity and get the resultant value for the Semantic Score.
+   The MaLSTM architecture consists of two LSTMs which shares the same weights and it embeds the sentences. Once we have the sentence embeddings, we can apply cosine similarity and get the resultant value for the Semantic Score.
 
 2. ### Semantic BERT:
-        In this we levarage the BERT Base model and fine tune it for our needs. We use a siamese network of bert to embed the sentences and use the CosineSimilarityLoss on top of it.
+   In this we levarage the BERT Base model and fine tune it for our needs. We use a siamese network of bert to embed the sentences and use the CosineSimilarityLoss on top of it.
 
 
 ## Observations
