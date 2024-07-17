@@ -14,10 +14,11 @@ test_df = test_df.drop(columns=['entailment_AB', 'entailment_BA', 'sentence_A_da
 val_df = val_df.drop(columns=['entailment_AB', 'entailment_BA', 'sentence_A_dataset', 'sentence_B_dataset'])
 
 import gensim.downloader as api
+import torch
 import numpy as np
 import pickle
 
-word_vectors = api.load('glove-twitter-200')
+word_vectors = torch.load("skip-gram-word-vectors.pt")
 with open("word_vectors.pkl", "wb") as f:
     pickle.dump(word_vectors, f)
 
